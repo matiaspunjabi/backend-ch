@@ -16,11 +16,11 @@ class ProductManager {
         }
 
         const repeatedCode = this.products.some(product => product.code === newProduct.code)
-        if(!repeatedCode){
+        if(newProduct.title && newProduct.description && newProduct.price && newProduct.thumbnail && newProduct.code && newProduct.stock !== '' && !repeatedCode){
             this.products.push(newProduct)
             console.log(`"${newProduct.title}" with code: "${newProduct.code}" has been added.`)
         } else {
-            console.log(`Code: "${newProduct.code}" has been used, please try with another code to be able to add "${newProduct.title}".`)
+            console.log(`Code: "${newProduct.code}" has been used, please try with another code to be able to add "${newProduct.title}" or complete all values.`)
         }
     }
     getProducts = () => {
@@ -39,12 +39,13 @@ class ProductManager {
 
 const manager = new ProductManager()
 
-manager.addProduct("peanut", "lorem", 200, "img", "abc123", 3000)
+manager.addProduct("peanut", "", 200, "img", "abc123", 3000)
 manager.addProduct("chestnut", "lorem", 200, "img", "abc122", 3000)
 manager.addProduct("nut", "lorem", 200, "img", "abc124", 3000);
-manager.addProduct("almond", "lorem", 200, "img", "abc125", 3000);
+manager.addProduct("almond","", 200, "img", "abc125", 3000);
 manager.addProduct("pistachio", "lorem", 200, "img", "abc125", 3000);
 
 manager.getProducts();
-manager.getProductById(4);
+manager.getProductById(2);
+manager.getProductById(6);
 
