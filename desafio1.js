@@ -16,6 +16,7 @@ class ProductManager {
         }
 
         const repeatedCode = this.products.some(product => product.code === newProduct.code)
+        
         if(newProduct.title && newProduct.description && newProduct.price && newProduct.thumbnail && newProduct.code && newProduct.stock !== '' && !repeatedCode){
             this.products.push(newProduct)
             console.log(`"${newProduct.title}" with code: "${newProduct.code}" has been added.`)
