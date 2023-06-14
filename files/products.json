@@ -1,0 +1,20 @@
+[
+	{
+		"title": "nuts",
+		"description": "lorem",
+		"price": 400,
+		"thumbnail": "img",
+		"code": "abc001",
+		"stock": 1000,
+		"id": 1
+	},
+	{
+		"title": "chestnuts",
+		"description": "lorem",
+		"price": 200,
+		"thumbnail": "img",
+		"code": "abc003",
+		"stock": 1000,
+		"id": 3
+	}
+]
