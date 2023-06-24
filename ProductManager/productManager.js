@@ -72,3 +72,87 @@ export default class ProductManager {
         }
     }
 }
+
+export const arrayProducts = [
+    {
+        title: "nuts",
+        description: "lorem",
+        price: 200,
+        thumbnail: "img",
+        code: "abc001",
+        stock: 1000
+    },
+    {
+        title: "peanuts",
+        description: "lorem",
+        price: 200,
+        thumbnail: "img",
+        code: "abc002",
+        stock: 1000
+    },
+    {
+        title: "almonds",
+        description: "lorem",
+        price: 200,
+        thumbnail: "img",
+        code: "abc003",
+        stock: 1000
+    },
+    {
+        title: "chestnuts",
+        description: "lorem",
+        price: 200,
+        thumbnail: "img",
+        code: "abc004",
+        stock: 1000
+    },
+    {
+        title: "pistachio",
+        description: "lorem",
+        price: 200,
+        thumbnail: "img",
+        code: "abc005",
+        stock: 1000
+    },
+    {
+        title: "banana chip",
+        description: "lorem",
+        price: 200,
+        thumbnail: "img",
+        code: "abc006",
+        stock: 1000
+    },
+    {
+        title: "dehydrated kiwi",
+        description: "lorem",
+        price: 200,
+        thumbnail: "img",
+        code: "abc007",
+        stock: 1000
+    },
+    {
+        title: "apple chips",
+        description: "lorem",
+        price: 200,
+        thumbnail: "img",
+        code: "abc008",
+        stock: 1000
+    },
+    {
+        title: "peach",
+        description: "lorem",
+        price: 200,
+        thumbnail: "img",
+        code: "abc009",
+        stock: 1000
+    },
+    {
+        title: "dehydrated plum",
+        description: "lorem",
+        price: 200,
+        thumbnail: "img",
+        code: "abc010",
+        stock: 1000
+    },
+    
+]
